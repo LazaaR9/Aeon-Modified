@@ -237,8 +237,8 @@ def progress_bar(pct):
         100
     )
     cFull = int(p // 10)
-    p_str = "█" * cfull
-    p_str += "▒" * (10 - cfull)
+    p_str = "█" * cFull
+    p_str += "▒" * (10 - cFull)
     return f"{p_str}"
 
 
