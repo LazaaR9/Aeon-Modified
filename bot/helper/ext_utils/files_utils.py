@@ -258,7 +258,7 @@ async def take_ss(video_file, duration=None, total=1, gen_ss=False):
         duration = (await get_media_info(video_file))[0]
     if duration == 0:
         duration = 3
-    duration = duration - (duration * 2 / 100)
+    duration = duration // 2
     cmd = [
         "xtra",
         "-hide_banner",
